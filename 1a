@@ -1,0 +1,59 @@
+// A simple class
+class Student {
+  // Variables / Data Types
+  String name;
+  int age;
+  double marks;
+
+  // Constructor
+  Student(this.name, this.age, this.marks);
+
+  // Function / Method
+  void displayDetails() {
+    print('Name: $name');
+    print('Age: $age');
+    print('Marks: $marks');
+
+    // Control Flow
+    if (marks >= 50) {
+      print('Result: Pass');
+    } else {
+      print('Result: Fail');
+    }
+  }
+}
+
+// Function with return value
+int addNumbers(int a, int b) {
+  return a + b;
+}
+
+// Main function - program starts here
+void main() {
+  // var
+  var college = 'ABC College';
+
+  // final - value can be assigned only once
+  final course = 'Flutter';
+
+  // const - compile-time constant
+  const pi = 3.14159;
+
+  // print() and String Interpolation
+  print('College: $college');
+  print('Course: $course');
+  print('Pi value: $pi');
+
+  // Calling a function
+  int result = addNumbers(10, 20);
+
+  print('10 + 20 = $result');
+
+  // Creating an object
+  var student = Student('Rahul', 20, 85.5);
+
+  print('\nStudent Details:');
+
+  // Calling class method
+  student.displayDetails();
+}
